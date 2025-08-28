@@ -1,0 +1,11 @@
+services:
+  main:
+    image:  manimcommunity/manim
+    command: "/bin/bash"
+    restart: always
+    user: "${UID}:${GID}"
+    volumes:
+      - .:/manim
+    environment:
+      UID: 1000
+      GID: 1000
