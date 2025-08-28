@@ -1,9 +1,9 @@
 services:
   main:
+    #name: my-manim-container
     image:  manimcommunity/manim
-    command: "/bin/bash"
-    restart: always
-    user: "${UID}:${GID}"
+    #restart: always
+    user: "1000:1000"
     volumes:
       - .:/manim
     environment:
