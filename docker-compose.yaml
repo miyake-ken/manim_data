@@ -2,10 +2,14 @@ services:
   main:
     #name: my-manim-container
     image:  manimcommunity/manim
-    #restart: always
+    command: jupyter lab --ip=0.0.0.0
+    restart: always
     user: "1000:1000"
     volumes:
       - .:/manim
+    ports:
+      - 8888:8888
     environment:
       UID: 1000
       GID: 1000
+      JUPYTER_ALLOW_INSECURE_WRITES: true

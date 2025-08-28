@@ -77,6 +77,8 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+.jupyter/*
+!.jupyter/labconfig
 
 # IPython
 profile_default/
@@ -207,7 +209,8 @@ marimo/_lsp/
 __marimo__/
 
 # TEMPORARY FILES
-# bash
+# cache
 .bash_history
+.local/share/jupyter/*
 # media
 /media/videos
