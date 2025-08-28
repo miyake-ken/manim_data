@@ -7,6 +7,8 @@ services:
     user: "1000:1000"
     volumes:
       - ./container_home:/manim
+      - ./inputs:/manim/inputs
+      - ./media:/manim/media
     ports:
       - 8888:8888
     environment:

@@ -10,7 +10,7 @@ See [official manim docker repository](https://hub.docker.com/r/manimcommunity/m
 
 ### create movie
 
-`sudo docker-compose run manim`
+`sudo docker-compose run manim inputs/test_scenes.py SquareToCircle -qm`
 
 ### jupyter
 

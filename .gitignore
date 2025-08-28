@@ -212,4 +212,5 @@ __marimo__/
 /container_home/.bash_history
 /container_home/.local/share/*
 # media
-/media/videos
+/media/*
+!/media/.keep
