@@ -209,8 +209,7 @@ __marimo__/
 
 # TEMPORARY FILES
 # cache
-/container_home/.bash_history
-/container_home/.local/share/*
+/container_home
 # media
 /media/*
 !/media/.keep

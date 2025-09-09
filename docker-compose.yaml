@@ -3,14 +3,13 @@ services:
     #name: my-manim-container
     # image:  manimcommunity/manim
     build: "."
-    command: jupyter lab --ip=0.0.0.0 --notebook-dir=~/jupyter_home --no-browser
+    command: jupyter lab --ip=* --notebook-dir=~/jupyter_home --no-browser
     restart: always
     user: "1000:1000"
     volumes:
       - ./container_home:/manim
       - ./inputs:/manim/inputs
       - ./media:/manim/media
-      - ./jupyter_notebook_config.py:/manim/.jupyter/jupyter_notebook_config.py
     ports:
       - 8888:8888
     environment:
