@@ -210,6 +210,8 @@ __marimo__/
 # TEMPORARY FILES
 # cache
 /container_home
+!/container_home/.keep
+!/container_home/jupyter_home/.keep
 # media
 /media/*
 !/media/.keep

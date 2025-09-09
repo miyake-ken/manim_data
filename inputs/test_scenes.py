@@ -1,4 +1,15 @@
 from manim import *
+from manim_chemistry import *
+
+class V1(Scene):
+    def construct(self):
+        all_scenes = [SquareToCircle, SquareToCircle]
+        for cls in all_scenes:
+            cls.setup(self)
+            cls.construct(self)
+            self.wait(1)
+            self.next_section()
+
 
 
 class SquareToCircle(Scene):
